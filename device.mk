@@ -99,11 +99,10 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
-# Overlays
-DEVICE_PACKAGES_OVERLAYS += \
-    $(LOCAL_PATH)
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
+# RRO-Overlays
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay \
+    WifiOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -152,30 +151,9 @@ PRODUCT_COPY_FILES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    factory_init.connectivity.common.rc \
-    factory_init.connectivity.rc \
-    factory_init.project.rc \
-    factory_init.rc \
-    fstab.mt6877 \
-    fstab.mt6877_ramdisk \
-    init.aee.rc \
-    init.ago.rc \
-    init.cgroup.rc \
-    init.connectivity.common.rc \
-    init.connectivity.rc\
-    init.modem.rc \
     init.mt6877.rc \
-    init.mt6877.usb.rc \
-    init.project.rc \
-    init.sensor_2_0.rc \
-    init.recovery.mt6877.rc \
-    meta_init.connectivity.common.rc \
-    meta_init.connectivity.rc \
-    meta_init.modem.rc \
-    meta_init.project.rc \
-    meta_init.rc \
-    ueventd.mt6877.rc
-
+    fstab.mt6877
+    
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
