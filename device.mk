@@ -62,7 +62,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mt6877.rc \
     fstab.mt6877
-    
+
+# System prop
+-include $(DEVICE_PATH)/system_prop.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+   
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
