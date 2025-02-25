@@ -41,6 +41,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.ivan
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
+
 # RRO-Overlays
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
