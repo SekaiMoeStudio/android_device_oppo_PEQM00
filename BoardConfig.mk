@@ -145,4 +145,5 @@ SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_VNDK_VERSION := current
 
 # Inherit from the proprietary version
--include vendor/oneplus/oneplus/BoardConfigVendor.mk
+-include vendor/oneplus/ivan/BoardConfigVendor.mk
+
