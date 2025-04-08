@@ -61,7 +61,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.ivan
+    android.hardware.light@2.0-service.ivan \
+    android.hardware.sensors@2.0-service-multihal.ivan
 
 # Biometrics
 PRODUCT_PACKAGES += \
