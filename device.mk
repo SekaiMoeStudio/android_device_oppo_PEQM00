@@ -140,3 +140,7 @@ PRODUCT_PACKAGES += \
 # InCall Service
 PRODUCT_PACKAGES += \
     MtkInCallService
+
+# Touch
+ PRODUCT_PACKAGES += \
+     vendor.lineage.touch@1.0-service.ivan
