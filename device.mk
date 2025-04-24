@@ -83,6 +83,15 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
 
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlay
+
+# MTK IMS Overlays
+PRODUCT_PACKAGES += \
+    mtk-ims \
+    mtk-ims-telephony
+
 # RRO-Overlays
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
@@ -131,3 +140,7 @@ PRODUCT_PACKAGES += \
 # InCall Service
 PRODUCT_PACKAGES += \
     MtkInCallService
+
+# Touch
+ PRODUCT_PACKAGES += \
+     vendor.lineage.touch@1.0-service.ivan

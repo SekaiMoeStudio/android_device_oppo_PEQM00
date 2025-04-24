@@ -16,3 +16,6 @@
 
 # IMS
 /system/bin/vtservice           u:object_r:vtservice_exec:s0
+
+# Touch
+/system/bin/hw/vendor\.lineage\.touch@[0-9]\.[0-9]-service\.ivan u:object_r:hal_lineage_touch_default_exec:s0
